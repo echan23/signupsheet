@@ -1,0 +1,136 @@
+body{
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.main{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7; 
+}
+
+.signArea{
+    display: flex;
+    flex: auto;
+    height: 100vh;
+    max-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.title{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-height: 15vh;
+    max-width: 100vw;
+    font-size: 15vh;
+    white-space: nowrap;
+    font-family: 'Single Day', cursive;
+    margin-top: 7vh;
+
+}
+
+#field{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    bottom: 1.5vh;
+    background-image: url("https://i.pinimg.com/736x/22/ff/57/22ff578f7bb851cfb7b772666a5bd8d8.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.formBox{
+    display: flex;
+    flex:auto;
+    max-width: 50vw;
+    max-height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex: auto;
+    max-width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill{
+    box-sizing: border-box;
+    height: 4vh;
+    width: 10vw;
+    border: 0.2vw solid black;
+}
+
+.fill:focus{
+    background-color: lightblue;
+}
+
+.submitBox{
+    display: flex;
+    flex: auto;
+    box-sizing: border-box;
+    height: 20vh;
+    max-height: 10vh;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#button{
+    display: flex;
+    flex: auto;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    max-height: 5vh;
+    max-width: 25vh;
+    border: 0.2vw solid black;
+    background-color: lightgreen;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: 'Single Day', cursive;
+    position: sticky;
+}
+
+#button:hover{
+    filter: brightness(125%);
+}
+
+::placeholder{
+    font-family: 'Single Day', cursive;
+    font-size: 2.5vh;
+    opacity: 0.5;
+}
+
+.errorMessage{
+    display: flex;
+    flex: auto;
+    height: 2vh;
+    max-height: 2vh;
+    padding: 5px 0 5px 0;
+    color: red;
+}
+
+input:valid{
+    background-color: lightgreen;
+}
+
+@font-face{
+    font-family: "Cartoon";
+    src: url("https://www.dafont.com/milk-mango.font");
+}

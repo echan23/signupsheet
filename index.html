@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpForm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <div class="signArea">
+            <div class="title">ULTIMATE EATING CONTEST</div>
+                <div id="field">
+                    <div class="formBox">
+                    <form id="form" action="/repos/practicefiles/signupsheet" method="get">
+                        <table class="input">
+                            <tr>
+                                <td class="name" >
+                                    <input type="text" id="name" name="user_name" placeholder="NAME" minlength="1" maxlength="16" 
+                                     class="fill" required>
+                                    <div class="errorMessage"></div>
+                                </td>
+                                <td class="email">
+                                    <input type="email" id="emailInput" name="user_email" placeholder="EMAIL" 
+                                    class="fill" required >
+                                    <div class="errorMessage" id="emailInvalid"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="number">
+                                    <input type="tel" id="phone" name="user_number" 
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10}" placeholder="PHONE NUMBER" 
+                                    class="fill" required>
+                                    <div class="errorMessage" id="numberInvalid"></div>
+                                </td>
+                                <td class="weight">
+                                    <input type="number" id="weight" name="user_weight" max=300 placeholder="WEIGHT" 
+                                    class="fill" required>
+                                    <div class="errorMessage" id="weightInvalid"></div>
+                                </td>
+                        </tr>
+                        </table>
+                    </form>
+                    </div>
+                    <div class="submitBox">
+                        <button onclick="validateAndSubmit()" id="button">Submit</button>
+                    </div>
+                </div>
+        </div>
+    </main>
+</body>
+</html>
